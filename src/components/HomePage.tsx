@@ -30,15 +30,46 @@ function HomePage() {
         </div>
       </div>
       <div className='w-full max-h-screen flex overflow-hidden'>
+        <nav className='w-full font-body z-50'>
+          <ul className='w-full flex gap-8 py-5 px-10 justify-end items-center font-bold'>
+            <a href='#features'>
+              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+                Features
+                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+              </li>
+            </a>
+            <a href='#nosotros'>
+              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+                Nosotros
+                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+              </li>
+            </a>
+            <a href='#resultados'>
+              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+                Resultados
+                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+              </li>
+            </a>
+            <a href='#contacto'>
+              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+                Contacto
+                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+              </li>
+            </a>
+            <li className='bg-white py-2 px-8 text-[#152F68] rounded-3xl cursor-pointer hover:bg-[#152F68] hover:text-white transition-all duration-500'>
+              Ingresar
+            </li>
+          </ul>
+        </nav>
         <img
-          className='w-full h-full mx-auto object-contain object-right'
+          className='w-full h-full mx-auto object-contain object-right z-10 absolute inset-0'
           src={Stroke}
           alt='stroke'
         />
         <img
           src={HomeImage}
           alt=''
-          className='w-[60%] h-full absolute -z-10 object-cover'
+          className='w-[60%] h-full absolute -z-10 object-cover brightness-75'
         />
       </div>
     </main>

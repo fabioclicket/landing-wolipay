@@ -2,7 +2,7 @@ import CardImage from '../assets/logoCard.png'
 
 function AboutUsPage() {
   return (
-    <div className='grid grid-cols-2 my-20 mt-28 text-black'>
+    <div className='grid grid-cols-2 my-20 mt-28 text-black' id='nosotros'>
       <div>
         <img
           src={CardImage}

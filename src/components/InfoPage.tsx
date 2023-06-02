@@ -2,10 +2,10 @@ import CardImage from '../assets/logoCard.png'
 
 function InfoPage() {
   return (
-    <div className='text-black mx-auto p-20 px-10 grid grid-cols-2 gap-20 mb-16'>
+    <div className='text-black mx-auto p-20 px-10 grid grid-cols-2 gap-20 mb-16' id='resultados'>
       <div>
         <div className='flex flex-col gap-6'>
-          <h3 className='text-[#89C9E7] uppercase text-sm'>
+          <h3 className='text-[#89C9E7] uppercase text-md'>
             Nosotros
           </h3>
           <p className='text-3xl font-body max-w-xs'>

@@ -2,7 +2,7 @@ import CardImage from '../assets/logoCard.png'
 
 function FeaturesPage() {
   return (
-    <div className='flex flex-col items-center my-16'>
+    <div className='flex flex-col items-center my-16' id='features'>
       <h3 className='text-[#89C9E7] mb-3 uppercase text-md'>
         Features
       </h3>

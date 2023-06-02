@@ -11,11 +11,17 @@ function App() {
       <FeaturesPage />
       <AboutUsPage />
       <InfoPage />
-      <Widget
-        id='vk9y0dLS'
-        style={{ width: '70%', height: '600px', margin: '3rem auto' }}
-        className='my-form'
-      />
+      <div id='contacto'>
+        <Widget
+          id='vk9y0dLS'
+          style={{
+            width: '70%',
+            height: '600px',
+            margin: '3rem auto',
+          }}
+          className='my-form'
+        />
+      </div>
     </div>
   )
 }
