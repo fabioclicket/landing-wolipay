@@ -3,7 +3,7 @@ import CardImage from '../assets/logoCard.png'
 function FeaturesPage() {
   return (
     <div className='flex flex-col items-center my-16'>
-      <h3 className='text-[#89C9E7] mb-3 uppercase text-sm'>
+      <h3 className='text-[#89C9E7] mb-3 uppercase text-md'>
         Features
       </h3>
       <p className='font-body text-black text-center text-3xl max-w-lg leading-8'>

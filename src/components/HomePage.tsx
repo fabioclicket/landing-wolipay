@@ -1,5 +1,6 @@
 import WolipayLogo from '../assets/wolipay-logo.png'
 import Stroke from '../assets/stroke.png'
+import HomeImage from '../assets/home-image.png'
 
 function HomePage() {
   return (
@@ -35,9 +36,9 @@ function HomePage() {
           alt='stroke'
         />
         <img
-          src='https://images.unsplash.com/photo-1546387903-6d82d96ccca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80'
+          src={HomeImage}
           alt=''
-          className='max-w-[60%] h-full absolute -z-10 object-cover'
+          className='w-[60%] h-full absolute -z-10 object-cover'
         />
       </div>
     </main>
