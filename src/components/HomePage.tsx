@@ -4,11 +4,11 @@ import HomeImage from '../assets/home-image.png'
 
 function HomePage() {
   return (
-    <main className='w-full min-h-screen grid grid-cols-home'>
-      <div className='flex flex-col justify-center bg-[#152F68] py-20 px-16'>
+    <main className='w-full min-h-screen flex flex-col md:grid-cols-home md:grid'>
+      <div className='flex flex-col justify-center bg-[#152F68] p-8 md:py-20 md:px-16'>
         <div className='w-full'>
           <img
-            className='w-48 h-auto mb-auto'
+            className='w-28 h-auto mb-auto md:w-48'
             src={WolipayLogo}
             alt='wolipay logo'
           />
