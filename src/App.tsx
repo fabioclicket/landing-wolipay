@@ -1,7 +1,5 @@
 import AboutUsPage from './components/AboutUsPage'
-import FeaturesPage from './components/FeaturesPage'
 import HomePage from './components/HomePage'
-import InfoPage from './components/InfoPage'
 import { Widget } from '@typeform/embed-react'
 import ReportsPage from './components/ReportsPage'
 import Footer from './components/Footer'
@@ -9,15 +7,15 @@ import Heart from './assets/heart.png'
 import WoliLogo from './assets/woli.png'
 import ReturnsPage from './components/ReturnsPage'
 import Integrate from './components/Integrate'
+import Header from './components/Header'
 
 function App() {
   return (
     <div className='flex flex-col'>
+      <Header />
       <HomePage />
-      {/* <FeaturesPage /> */}
       <AboutUsPage />
       <ReportsPage />
-      {/* <InfoPage /> */}
       <ReturnsPage />
       <Integrate />
       <div id='contacto'>
@@ -26,7 +24,7 @@ function App() {
           style={{
             width: '70%',
             height: '600px',
-            margin: '3rem auto',
+            margin: '7rem auto 4rem',
           }}
           className='my-form'
         />

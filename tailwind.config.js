@@ -8,7 +8,7 @@ export default {
         home: '40% 60%',
       },
       fontFamily: {
-        body: ['"Mabry Pro"', 'sans-serif'],
+        body: ['Mabry Pro', 'sans-serif'],
       },
     },
   },
