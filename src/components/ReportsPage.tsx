@@ -2,7 +2,7 @@ import PartnerImage from '../assets/partnerImage.png'
 
 function ReportsPage() {
   return (
-    <div className='flex flex-col mt-4 md:mt-10 text-black bg-[#89C8E71A] md:grid md:grid-cols-2'>
+    <div className='flex flex-col mt-4 md:mt-10 text-black bg-[#89C8E71A] md:grid md:grid-cols-2' id='reportes'>
       <div className='flex flex-col gap-6 pt-14 pb-8 px-6 justify-center items-end md:pr-12 md:p-20'>
         <div className='flex flex-col gap-6'>
           <h3 className='text-[#152F68] uppercase text-md'>

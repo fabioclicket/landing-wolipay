@@ -4,7 +4,7 @@ function ReturnsPage() {
   return (
     <div
       className='flex flex-col-reverse items-center text-black gap-8 md:gap-32 md:flex-row'
-      id='nosotros'
+      id='devoluciones'
     >
       <div className='h-full'>
         <img

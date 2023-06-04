@@ -2,7 +2,7 @@ import CodeImg from '../assets/codeImg.png'
 import MethodsImg from '../assets/methods.png'
 function Integrate() {
   return (
-    <div className='relative h-full flex flex-col bg-[#1E1E1E] md:grid md:grid-cols-2'>
+    <div className='relative h-full flex flex-col bg-[#1E1E1E] md:grid md:grid-cols-2' id='integracion'>
       <div className='flex flex-col py-14 px-6 justify-center items-end md:p-20'>
         <div className='flex flex-col gap-6 '>
           <h3 className='text-[#89C9E7] uppercase text-md'>

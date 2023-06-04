@@ -4,7 +4,7 @@ function AboutUsPage() {
   return (
     <div
       className='flex flex-col-reverse text-black px-4 my-12 md:my-14 md:px-12 md:grid md:grid-cols-2'
-      id='nosotros'
+      id='pagos'
     >
       <div className='w-full self-end md:pl-32'>
         <img
@@ -17,7 +17,7 @@ function AboutUsPage() {
         <h3 className='text-[#89C9E7] uppercase text-md'>
           MÉTODOS DE PAGO
         </h3>
-        <p className='w-full text-3xl font-body max-w-lg md:pr-10 leading-8'>
+        <p className='w-full text-3xl font-body md:max-w-xl md:pr-4 leading-8 md:text-4xl'>
           Acepta los{' '}
           <span className='text-[#152F68] font-semibold'>
             métodos de pago

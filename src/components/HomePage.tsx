@@ -22,8 +22,8 @@ function HomePage() {
               administra tu dinero con Wolipay.
             </p>
             <a
-              href='#'
-              className='w-44 bg-[#89C9E7] text-[#152F68] text-lg text-center rounded-3xl font-bold font-body py-2 md:py-3'
+              href='#contacto'
+              className='w-44 bg-[#89C9E7] text-[#152F68] text-lg text-center rounded-3xl font-bold font-body py-2 md:py-3 hover:bg-white cursor-pointer z-50 transition-colors duration-300'
             >
               Me interesa
             </a>

@@ -4,27 +4,27 @@ function Header() {
       <div className='w-full flex items-center justify-between py-1 px-8 md:px-2'>
         <nav className='w-full font-body z-50 hidden md:block'>
           <ul className='w-full flex gap-8 py-5 px-10 justify-end items-center font-bold'>
-            <a href='#features'>
+            <a href='#pagos'>
               <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
-                Features
+                Pagos
                 <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
               </li>
             </a>
-            <a href='#nosotros'>
+            <a href='#reportes'>
               <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
-                Nosotros
+                Reportes
                 <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
               </li>
             </a>
-            <a href='#resultados'>
+            <a href='#devoluciones'>
               <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
-                Resultados
+                Devoluciones
                 <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
               </li>
             </a>
-            <a href='#contacto'>
+            <a href='#integracion'>
               <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
-                Contacto
+                Integración
                 <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
               </li>
             </a>
