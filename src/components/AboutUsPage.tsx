@@ -2,26 +2,29 @@ import MobileImage from '../assets/woliMobileImage.png'
 
 function AboutUsPage() {
   return (
-    <div className='grid grid-cols-2 my-14 text-black px-12' id='nosotros'>
-      <div className='w-full pl-32 self-end'>
+    <div
+      className='flex flex-col-reverse text-black px-4 my-12 md:my-14 md:px-12 md:grid md:grid-cols-2'
+      id='nosotros'
+    >
+      <div className='w-full self-end md:pl-32'>
         <img
           src={MobileImage}
           alt='card image'
           className='object-cover'
         />
       </div>
-      <div className='flex flex-col gap-6 p-20 justify-center'>
+      <div className='flex flex-col p-4 mb-8 gap-6 justify-center md:p-20 md:mb-0'>
         <h3 className='text-[#89C9E7] uppercase text-md'>
           MÉTODOS DE PAGO
         </h3>
-        <p className='text-4xl font-body max-w-lg pr-10'>
+        <p className='w-full text-3xl font-body max-w-lg md:pr-10 leading-8'>
           Acepta los{' '}
           <span className='text-[#152F68] font-semibold'>
             métodos de pago
           </span>{' '}
           más utilizados en Bolivia.{' '}
         </p>
-        <p className='max-w-md text-[#AAAAAA] text-lg'>
+        <p className='max-w-md text-[#AAAAAA] text-base md:text-lg'>
           Wolipay ofrece a tus clientes la posibilidad de pagar
           utilizando todos los métodos de pago disponibles para que
           nada te aleje de esa venta que quieres lograr.

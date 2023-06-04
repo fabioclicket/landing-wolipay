@@ -3,7 +3,7 @@ import ReturnImg from '../assets/returnsImg.png'
 function ReturnsPage() {
   return (
     <div
-      className='flex items-center text-black gap-32'
+      className='flex flex-col-reverse items-center text-black gap-8 md:gap-32 md:flex-row'
       id='nosotros'
     >
       <div className='h-full'>
@@ -13,18 +13,18 @@ function ReturnsPage() {
           className='object-cover'
         />
       </div>
-      <div className='flex flex-col gap-6 justify-center'>
+      <div className='flex flex-col gap-6 justify-center py-12 px-5 md:p-0'>
         <h3 className='text-[#89C9E7] uppercase text-md'>
           Devoluciones
         </h3>
-        <p className='text-4xl font-body max-w-3xl pr-2'>
+        <p className='text-3xl font-body max-w-3xl pr-2 md:text-4xl'>
           Incrementa tus ventas con{' '}
           <span className='text-[#152F68] font-semibold'>
             políticas de devolución
           </span>{' '}
           y gestiona todo desde Wolipay.{' '}
         </p>
-        <p className='max-w-2xl text-[#AAAAAA] text-lg'>
+        <p className='max-w-2xl text-[#AAAAAA] text-base pr-5 md:text-lg md:pr-0'>
           Optimiza tus ventas con políticas de devolución efectivas.
           Incrementa la confianza del cliente al ofrecer devoluciones
           fáciles. Gestiona todo de manera conveniente desde nuestra

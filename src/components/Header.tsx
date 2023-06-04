@@ -1,15 +1,8 @@
-import WolipayLogo from '../assets/wolipay-logo.png'
-
 function Header() {
   return (
     <header className='w-full h-auto max-w-[1390px] flex absolute top-0 z-50 self-center'>
-      <div className='w-full flex items-center justify-between py-1 px-2'>
-        <img
-          className='w-28 h-auto md:w-40 -mb-20'
-          src={WolipayLogo}
-          alt='wolipay logo'
-        />
-        <nav className='w-full font-body z-50'>
+      <div className='w-full flex items-center justify-between py-1 px-8 md:px-2'>
+        <nav className='w-full font-body z-50 hidden md:block'>
           <ul className='w-full flex gap-8 py-5 px-10 justify-end items-center font-bold'>
             <a href='#features'>
               <li className='max-h-max cursor-pointer relative group transition-all duration-300'>

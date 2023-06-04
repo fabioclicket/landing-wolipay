@@ -11,7 +11,7 @@ import Header from './components/Header'
 
 function App() {
   return (
-    <div className='flex flex-col'>
+    <div className='w-full flex flex-col'>
       <Header />
       <HomePage />
       <AboutUsPage />
@@ -21,12 +21,7 @@ function App() {
       <div id='contacto'>
         <Widget
           id='vk9y0dLS'
-          style={{
-            width: '70%',
-            height: '600px',
-            margin: '7rem auto 4rem',
-          }}
-          className='my-form'
+          className='my-form w-[90%] md:w-[70%] h-[600px] mt-16 md:mt-28 mx-auto mb-16'
         />
         <div className='w-full flex flex-col gap-3 items-center mx-auto text-black mb-16'>
           <p className='flex items-center gap-2'>
