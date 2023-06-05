@@ -24,7 +24,7 @@ function HomePage() {
             </div>
           </div>
           <div className='self-end my-auto grid gap-8'>
-            <h2 className='max-w-md text-5xl text-white font-bold font-body lg:text-6xl lg:pr-20'>
+            <h2 className='max-w-md text-5xl text-white font-bold font-body lg:text-6xl lg:pr-0 xl:pr-20'>
               La forma <br /> más fácil de recibir pagos en linea
             </h2>
             <p className='text-base max-w-md pr-12 lg:pr-32 lg:text-lg'>
