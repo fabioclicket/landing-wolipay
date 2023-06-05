@@ -19,7 +19,7 @@ function HomePage() {
               src={WolipayLogo}
               alt='wolipay logo'
             />
-            <div onClick={() => setShow(true)}>
+            <div onClick={() => setShow(true)} className='z-50'>
               <MenuIcon />
             </div>
           </div>
@@ -42,8 +42,10 @@ function HomePage() {
         </div>
         <aside
           className={`${
-            show && 'translate-x-0'
-          } fixed w-[60%] max-w-[250px] translate-x-64 top-0 bottom-0 right-0 min-h-screen bg-white p-10 pr-5 z-50 transition-transform duration-500 md:hidden`}
+            show
+              ? 'fixed w-[60%] max-w-[250px] translate-x-0 top-0 bottom-0 right-0 min-h-screen bg-white py-10 px-6 z-50 transition-transform duration-500 md:hidden'
+              : 'fixed w-[60%] max-w-[250px] translate-x-64 top-0 bottom-0 right-0 min-h-screen bg-white py-10 px-6 z-50 transition-transform duration-500 md:hidden'
+          } `}
         >
           <div className='w-full flex items-center justify-between'>
             <p className='w-max flex flex-col text-black font-semibold text-xl'>
