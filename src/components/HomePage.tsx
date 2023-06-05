@@ -10,12 +10,12 @@ function HomePage() {
   const [show, setShow] = useState(false)
 
   return (
-    <main className='w-full min-h-screen flex flex-col md:grid-cols-home md:grid'>
-      <div className='relative flex flex-col justify-center bg-[#152F68] p-8 pt-8 pb-20 md:py-20 md:pt-8 md:px-12'>
-        <div className='h-full md:self-end my-auto grid grid-cols-1 gap-10 md:gap-8 place-content-between'>
+    <main className='w-full min-h-screen flex flex-col lg:grid-cols-home lg:grid'>
+      <div className='relative max-h-screen flex flex-col justify-center bg-[#152F68] p-8 pt-8 pb-20 lg:py-20 lg:pt-8 lg:px-12'>
+        <div className='h-full lg:self-end my-auto grid grid-cols-1 gap-10 lg:gap-8 place-content-between'>
           <div className='flex justify-between'>
             <img
-              className='w-28 h-auto md:w-40 self-center mb-10 md:mb-0'
+              className='w-28 h-auto lg:w-40 self-center mb-10 lg:mb-0'
               src={WolipayLogo}
               alt='wolipay logo'
             />
@@ -24,16 +24,16 @@ function HomePage() {
             </div>
           </div>
           <div className='self-end my-auto grid gap-8'>
-            <h2 className='max-w-md text-5xl text-white font-bold font-body lg:text-6xl md:pr-20'>
+            <h2 className='max-w-md text-5xl text-white font-bold font-body lg:text-6xl lg:pr-20'>
               La forma <br /> más fácil de recibir pagos en linea
             </h2>
-            <p className='text-base max-w-md pr-12 md:pr-32 md:text-lg'>
+            <p className='text-base max-w-md pr-12 lg:pr-32 lg:text-lg'>
               Recibe pagos en línea, de manera fácil y segura,
               administra tu dinero con Wolipay.
             </p>
             <a
               href='#contacto'
-              className='w-44 bg-[#89C9E7] text-[#152F68] text-lg text-center rounded-3xl font-bold font-body py-2 md:py-3 hover:bg-white cursor-pointer z-50 transition-colors duration-300'
+              className='w-44 bg-[#89C9E7] text-[#152F68] text-lg text-center rounded-3xl font-bold font-body py-2 lg:py-3 hover:bg-white cursor-pointer z-50 transition-colors duration-300'
             >
               Me interesa
             </a>
@@ -84,21 +84,21 @@ function HomePage() {
           </ul>
         </aside>
       </div>
-      <div className='w-full h-full md:max-h-screen flex overflow-hidden'>
+      <div className='w-full h-full lg:max-h-screen flex overflow-hidden'>
         <img
-          className='hidden w-full h-full mx-auto object-contain object-right z-10 absolute inset-0 md:flex'
+          className='hidden w-full h-full mx-auto object-contain object-right z-10 absolute inset-0 lg:flex'
           src={Stroke}
           alt='stroke'
         />
         <img
           src={HomeImage}
           alt=''
-          className='hidden w-full h-full absolute -z-10 object-cover brightness-75 md:block md:w-[60%]'
+          className='hidden w-full h-full absolute -z-10 object-cover brightness-75 lg:block lg:w-[60%]'
         />
         <img
           src={HomeMobileImage}
           alt=''
-          className='w-full max-w-full h-full object-cover brightness-90 md:hidden'
+          className='w-full max-w-full h-full object-cover brightness-90 lg:hidden'
         />
       </div>
     </main>

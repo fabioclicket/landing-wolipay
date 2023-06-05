@@ -6,7 +6,7 @@ function AboutUsPage() {
       className='flex flex-col-reverse text-black px-4 my-12 md:my-14 md:px-12 md:grid md:grid-cols-2'
       id='pagos'
     >
-      <div className='w-full self-end md:pl-32'>
+      <div className='w-full h-full flex items-center self-end md:pl-32'>
         <img
           src={MobileImage}
           alt='card image'
