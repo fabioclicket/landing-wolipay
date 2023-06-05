@@ -1,4 +1,8 @@
-function Header() {
+type Props = {
+  setShowLogin: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+function Header({ setShowLogin }: Props) {
   return (
     <header className='w-full h-auto max-w-[1390px] flex absolute top-0 z-50 self-center'>
       <div className='w-full flex items-center justify-between py-1 px-8 md:px-2'>
@@ -28,7 +32,10 @@ function Header() {
                 <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
               </li>
             </a>
-            <li className='bg-white py-2 px-8 text-[#152F68] rounded-3xl cursor-pointer hover:bg-[#152F68] hover:text-white transition-all duration-500'>
+            <li
+              onClick={() => setShowLogin(true)}
+              className='bg-white py-2 px-8 text-[#152F68] rounded-3xl cursor-pointer hover:bg-[#152F68] hover:text-white transition-all duration-500'
+            >
               Ingresar
             </li>
           </ul>
