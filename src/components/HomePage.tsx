@@ -60,22 +60,22 @@ function HomePage() {
             </div>
           </div>
           <ul className='w-full flex flex-col gap-8 justify-start font-bold text-black mt-10'>
-            <a href='#pagos'>
+            <a href='#pagos' onClick={() => setShow(false)}>
               <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
                 Pagos
               </li>
             </a>
-            <a href='#reportes'>
+            <a href='#reportes' onClick={() => setShow(false)}>
               <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
                 Reportes
               </li>
             </a>
-            <a href='#devoluciones'>
+            <a href='#devoluciones' onClick={() => setShow(false)}>
               <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
                 Devoluciones
               </li>
             </a>
-            <a href='#integracion'>
+            <a href='#integracion' onClick={() => setShow(false)}>
               <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
                 Integración
               </li>
