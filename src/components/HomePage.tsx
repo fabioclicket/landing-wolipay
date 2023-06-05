@@ -4,7 +4,7 @@ import HomeImage from '../assets/home-image.png'
 import HomeMobileImage from '../assets/homeImageMobile.png'
 import MenuIcon from '../icons/MenuIcon'
 import { useState } from 'react'
-import CloseIcon from '../icons/CloseIcon';
+import CloseIcon from '../icons/CloseIcon'
 
 function HomePage() {
   const [show, setShow] = useState(false)
@@ -40,47 +40,49 @@ function HomePage() {
           </div>
           <div className='' />
         </div>
-        {show && (
-          <aside className='fixed w-[60%] top-0 bottom-0 right-0 min-h-screen bg-white p-10 pr-5 z-50 animate-fade'>
-            <div className='w-full flex items-center justify-between'>
-              <p className='w-max flex flex-col text-black font-semibold text-xl'>
-                Menú
-                <span className='w-full h-1 rounded-2xl bg-[#152F68]'></span>
-              </p>
-              <div
-                className='text-black text-2xl h-full -mt-5 font-semibold'
-                onClick={() => setShow(false)}
-              >
-                <CloseIcon />
-              </div>
+        <aside
+          className={`${
+            show && 'translate-x-0'
+          } fixed w-[60%] translate-x-64 top-0 bottom-0 right-0 min-h-screen bg-white p-10 pr-5 z-50 transition-transform duration-500`}
+        >
+          <div className='w-full flex items-center justify-between'>
+            <p className='w-max flex flex-col text-black font-semibold text-xl'>
+              Menú
+              <span className='w-full h-1 rounded-2xl bg-[#152F68]'></span>
+            </p>
+            <div
+              className='text-black text-2xl h-full -mt-5 font-semibold'
+              onClick={() => setShow(false)}
+            >
+              <CloseIcon />
             </div>
-            <ul className='w-full flex flex-col gap-8 justify-start font-bold text-black mt-10'>
-              <a href='#pagos'>
-                <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
-                  Pagos
-                </li>
-              </a>
-              <a href='#reportes'>
-                <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
-                  Reportes
-                </li>
-              </a>
-              <a href='#devoluciones'>
-                <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
-                  Devoluciones
-                </li>
-              </a>
-              <a href='#integracion'>
-                <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
-                  Integración
-                </li>
-              </a>
-              <li className='bg-[#152F68] text-center py-2 px-8 text-white rounded-3xl cursor-pointer transition-all duration-500'>
-                Ingresar
+          </div>
+          <ul className='w-full flex flex-col gap-8 justify-start font-bold text-black mt-10'>
+            <a href='#pagos'>
+              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+                Pagos
               </li>
-            </ul>
-          </aside>
-        )}
+            </a>
+            <a href='#reportes'>
+              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+                Reportes
+              </li>
+            </a>
+            <a href='#devoluciones'>
+              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+                Devoluciones
+              </li>
+            </a>
+            <a href='#integracion'>
+              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+                Integración
+              </li>
+            </a>
+            <li className='bg-[#152F68] text-center py-2 px-8 text-white rounded-3xl cursor-pointer transition-all duration-500'>
+              Ingresar
+            </li>
+          </ul>
+        </aside>
       </div>
       <div className='w-full h-full md:max-h-screen flex overflow-hidden'>
         <img
