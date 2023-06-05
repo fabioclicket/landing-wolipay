@@ -43,7 +43,7 @@ function HomePage() {
         <aside
           className={`${
             show && 'translate-x-0'
-          } fixed w-[60%] translate-x-64 top-0 bottom-0 right-0 min-h-screen bg-white p-10 pr-5 z-50 transition-transform duration-500`}
+          } fixed w-[60%] max-w-[250px] translate-x-64 top-0 bottom-0 right-0 min-h-screen bg-white p-10 pr-5 z-50 transition-transform duration-500 md:hidden`}
         >
           <div className='w-full flex items-center justify-between'>
             <p className='w-max flex flex-col text-black font-semibold text-xl'>
