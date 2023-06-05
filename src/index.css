@@ -46,6 +46,6 @@ body {
 }
 
 div {
-  scroll-margin: 20px;
+  scroll-margin: 0px;
   scroll-snap-align: start;
 }

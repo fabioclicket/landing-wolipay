@@ -30,7 +30,7 @@ function Login({ setShowLogin }: Props) {
             <input
               type='password'
               id='password'
-              className='text-black bg-[#FDFCFC] pt-1 h-[38px] px-2 rounded-md border border-[#B6B6B6] placeholder:text-base'
+              className='text-black bg-[#FDFCFC] py-1 h-[38px] px-2 rounded-md border border-[#B6B6B6] placeholder:text-base'
               placeholder='*********'
             />
           </div>
