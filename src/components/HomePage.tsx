@@ -1,6 +1,6 @@
 import WolipayLogo from '../assets/wolipay-logo.png'
 import Stroke from '../assets/stroke.png'
-import HomeImage from '../assets/home-image.png'
+import HomeImage from '../assets/home-image.webp'
 import HomeMobileImage from '../assets/homeImageMobile.png'
 import MenuIcon from '../icons/MenuIcon'
 import { useState } from 'react'
