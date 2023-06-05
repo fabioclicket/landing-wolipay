@@ -22,7 +22,7 @@ function Integrate() {
           </p>
         </div>
       </div>
-      <div className='relative w-full h-full flex items-center justify-center'>
+      <div className='relative w-full h-full flex items-center justify-center z-40'>
         <img
           src={CodeImg}
           alt='code image'
