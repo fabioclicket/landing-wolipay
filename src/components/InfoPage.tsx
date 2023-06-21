@@ -2,19 +2,19 @@ import CardImage from '../assets/logoCard.png'
 
 function InfoPage() {
   return (
-    <div className='text-black mx-auto p-20 px-10 grid grid-cols-2 gap-20 mb-16' id='resultados'>
+    <div className='mx-auto mb-16 grid grid-cols-2 gap-20 p-20 px-10 text-black' id='resultados'>
       <div>
         <div className='flex flex-col gap-6'>
-          <h3 className='text-[#89C9E7] uppercase text-md'>
+          <h3 className='text-md uppercase text-[#89C9E7]'>
             Nosotros
           </h3>
-          <p className='text-3xl font-body max-w-xs'>
+          <p className='max-w-xs font-body text-3xl'>
             Somos{' '}
-            <span className='text-[#152F68] font-semibold'>
+            <span className='font-semibold text-[#152F68]'>
               expertos
             </span>{' '}
             en{' '}
-            <span className='text-[#152F68] font-semibold'>
+            <span className='font-semibold text-[#152F68]'>
               pagos en línea
             </span>
           </p>
@@ -23,16 +23,16 @@ function InfoPage() {
           </p>
         </div>
 
-        <div className='flex items-center gap-10 mt-8'>
+        <div className='mt-8 flex items-center gap-10'>
           <img
             src={CardImage}
             alt=''
-            className='w-72 h-28 object-cover rotate-180'
+            className='h-28 w-72 rotate-180 object-cover'
           />
           <img
             src={CardImage}
             alt=''
-            className='w-72 h-28 object-cover -mb-16 rotate-180'
+            className='-mb-16 h-28 w-72 rotate-180 object-cover'
           />
         </div>
       </div>
@@ -40,7 +40,7 @@ function InfoPage() {
         <img
           src={CardImage}
           alt=''
-          className='w-80 h-full object-cover rotate-180'
+          className='h-full w-80 rotate-180 object-cover'
         />
       </div>
     </div>

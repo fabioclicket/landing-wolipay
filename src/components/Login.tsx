@@ -6,9 +6,9 @@ type Props = {
 
 function Login({ setShowLogin }: Props) {
   return (
-    <div className='flex items-center justify-center min-h-screen w-full'>
-      <div className='w-[90%] max-w-[460px] border border-slate-200 rounded-xl p-10 md:p-16'>
-        <div className='w-40 mx-auto py-2 mb-10'>
+    <div className='flex min-h-screen w-full items-center justify-center'>
+      <div className='w-[90%] max-w-[460px] rounded-xl border border-slate-200 p-10 md:p-16'>
+        <div className='mx-auto mb-10 w-40 py-2'>
           <img src={WoliLogo} alt='' />
         </div>
         <div className='flex flex-col gap-4 text-black'>
@@ -20,7 +20,7 @@ function Login({ setShowLogin }: Props) {
               type='email'
               id='email'
               placeholder='Ingresa tu correo electrónico'
-              className='text-black bg-[#FDFCFC] pt-1 pb-2 px-2 rounded-md border border-[#B6B6B6] placeholder:text-sm'
+              className='rounded-md border border-[#B6B6B6] bg-[#FDFCFC] px-2 pb-2 pt-1 text-black placeholder:text-sm'
             />
           </div>
           <div className='flex flex-col gap-1'>
@@ -30,16 +30,16 @@ function Login({ setShowLogin }: Props) {
             <input
               type='password'
               id='password'
-              className='text-black bg-[#FDFCFC] py-1 h-[38px] px-2 rounded-md border border-[#B6B6B6] placeholder:text-base'
+              className='h-[38px] rounded-md border border-[#B6B6B6] bg-[#FDFCFC] px-2 py-1 text-black placeholder:text-base'
               placeholder='*********'
             />
           </div>
         </div>
-        <div className='w-full flex mt-20'>
+        <div className='mt-20 flex w-full'>
           <a
             href='#'
             onClick={() => setShowLogin(false)}
-            className='inline-flex w-full py-[6px] px-5 max-w-[160px] mx-auto justify-center bg-[#29BE6E] rounded-2xl text-sm'
+            className='mx-auto inline-flex w-full max-w-[160px] justify-center rounded-2xl bg-[#29BE6E] px-5 py-[6px] text-sm'
           >
             Ingresar
           </a>

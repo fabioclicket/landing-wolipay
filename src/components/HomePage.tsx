@@ -10,12 +10,12 @@ function HomePage() {
   const [show, setShow] = useState(false)
 
   return (
-    <main className='w-full min-h-screen flex flex-col lg:grid-cols-home lg:grid'>
-      <div className='relative max-h-screen flex flex-col justify-center bg-[#152F68] p-8 pt-8 pb-20 lg:py-20 lg:pt-8 lg:px-12'>
-        <div className='h-full lg:self-end my-auto grid grid-cols-1 gap-10 lg:gap-8 place-content-between'>
+    <main className='flex min-h-screen w-full flex-col lg:grid lg:grid-cols-home'>
+      <div className='relative flex max-h-screen flex-col justify-center bg-[#152F68] p-8 pb-20 lg:px-12 lg:py-20 lg:pt-8'>
+        <div className='my-auto grid h-full grid-cols-1 place-content-between gap-10 lg:gap-8 lg:self-end'>
           <div className='flex justify-between'>
             <img
-              className='w-28 h-auto lg:w-40 self-center mb-10 lg:mb-0'
+              className='mb-10 h-auto w-28 self-center lg:mb-0 lg:w-40'
               src={WolipayLogo}
               alt='wolipay logo'
             />
@@ -23,17 +23,17 @@ function HomePage() {
               <MenuIcon />
             </div>
           </div>
-          <div className='self-end my-auto grid gap-8'>
-            <h2 className='max-w-md text-5xl text-white font-bold font-body lg:text-6xl lg:pr-0 xl:pr-16'>
+          <div className='my-auto grid gap-8 self-end'>
+            <h2 className='max-w-md font-body text-5xl font-bold text-white lg:pr-0 lg:text-6xl xl:pr-16'>
               La forma <br /> más fácil de recibir pagos en linea
             </h2>
-            <p className='text-base max-w-md pr-12 lg:pr-32 lg:text-lg'>
+            <p className='max-w-md pr-12 text-base lg:pr-32 lg:text-lg'>
               Recibe pagos en línea, de manera fácil y segura,
               administra tu dinero con Wolipay.
             </p>
             <a
               href='#contacto'
-              className='w-44 bg-[#89C9E7] text-[#152F68] text-lg text-center rounded-3xl font-bold font-body py-2 lg:py-3 hover:bg-white cursor-pointer z-50 transition-colors duration-300'
+              className='z-50 w-44 cursor-pointer rounded-3xl bg-[#89C9E7] py-2 text-center font-body text-lg font-bold text-[#152F68] transition-colors duration-300 hover:bg-white lg:py-3'
             >
               Me interesa
             </a>
@@ -43,64 +43,64 @@ function HomePage() {
         <aside
           className={`${
             show
-              ? 'fixed w-[60%] max-w-[250px] translate-x-0 top-0 bottom-0 right-0 min-h-screen bg-white py-10 px-6 z-50 transition-transform duration-500 md:hidden'
-              : 'fixed w-[60%] max-w-[250px] translate-x-64 top-0 bottom-0 right-0 min-h-screen bg-white py-10 px-6 z-50 transition-transform duration-500 md:hidden'
+              ? 'fixed inset-y-0 right-0 z-50 min-h-screen w-[60%] max-w-[250px] translate-x-0 bg-white px-6 py-10 transition-transform duration-500 md:hidden'
+              : 'fixed inset-y-0 right-0 z-50 min-h-screen w-[60%] max-w-[250px] translate-x-64 bg-white px-6 py-10 transition-transform duration-500 md:hidden'
           } `}
         >
-          <div className='w-full flex items-center justify-between'>
-            <p className='w-max flex flex-col text-black font-semibold text-xl'>
+          <div className='flex w-full items-center justify-between'>
+            <p className='flex w-max flex-col text-xl font-semibold text-black'>
               Menú
-              <span className='w-full h-1 rounded-2xl bg-[#152F68]'></span>
+              <span className='h-1 w-full rounded-2xl bg-[#152F68]'></span>
             </p>
             <div
-              className='text-black text-2xl h-full -mt-5 font-semibold'
+              className='-mt-5 h-full text-2xl font-semibold text-black'
               onClick={() => setShow(false)}
             >
               <CloseIcon />
             </div>
           </div>
-          <ul className='w-full flex flex-col gap-8 justify-start font-bold text-black mt-10'>
+          <ul className='mt-10 flex w-full flex-col justify-start gap-8 font-bold text-black'>
             <a href='#pagos' onClick={() => setShow(false)}>
-              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+              <li className='group relative inline-block max-h-max cursor-pointer transition-all duration-300'>
                 Pagos
               </li>
             </a>
             <a href='#reportes' onClick={() => setShow(false)}>
-              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+              <li className='group relative inline-block max-h-max cursor-pointer transition-all duration-300'>
                 Reportes
               </li>
             </a>
             <a href='#devoluciones' onClick={() => setShow(false)}>
-              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+              <li className='group relative inline-block max-h-max cursor-pointer transition-all duration-300'>
                 Devoluciones
               </li>
             </a>
             <a href='#integracion' onClick={() => setShow(false)}>
-              <li className='inline-block max-h-max cursor-pointer relative group transition-all duration-300'>
+              <li className='group relative inline-block max-h-max cursor-pointer transition-all duration-300'>
                 Integración
               </li>
             </a>
-            <li className='bg-[#152F68] text-center py-2 px-8 text-white rounded-3xl cursor-pointer transition-all duration-500'>
+            <li className='cursor-pointer rounded-3xl bg-[#152F68] px-8 py-2 text-center text-white transition-all duration-500'>
               Ingresar
             </li>
           </ul>
         </aside>
       </div>
-      <div className='w-full h-full lg:max-h-screen flex overflow-hidden'>
+      <div className='flex h-full w-full overflow-hidden lg:max-h-screen'>
         <img
-          className='hidden w-full h-full mx-auto object-contain object-right z-10 absolute inset-0 lg:flex'
+          className='absolute inset-0 z-10 mx-auto hidden h-full w-full object-contain object-right lg:flex'
           src={Stroke}
           alt='stroke'
         />
         <img
           src={HomeImage}
           alt=''
-          className='hidden w-full h-full absolute -z-10 object-cover brightness-75 lg:block lg:w-[60%]'
+          className='absolute -z-10 hidden h-full w-full object-cover brightness-75 lg:block lg:w-[60%]'
         />
         <img
           src={HomeMobileImage}
           alt=''
-          className='w-full max-w-full h-full object-cover brightness-90 lg:hidden'
+          className='h-full w-full max-w-full object-cover brightness-90 lg:hidden'
         />
       </div>
     </main>

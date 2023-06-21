@@ -2,15 +2,15 @@ import PartnerImage from '../assets/partnerImage.png'
 
 function ReportsPage() {
   return (
-    <div className='flex flex-col mt-4 md:mt-10 text-black bg-[#89C8E71A] md:grid md:grid-cols-2' id='reportes'>
-      <div className='flex flex-col gap-6 pt-14 pb-8 px-6 justify-center items-end md:pr-12 md:p-20'>
+    <div className='mt-4 flex flex-col bg-[#89C8E71A] text-black md:mt-10 md:grid md:grid-cols-2' id='reportes'>
+      <div className='flex flex-col items-end justify-center gap-6 px-6 pb-8 pt-14 md:p-20 md:pr-12'>
         <div className='flex flex-col gap-6'>
-          <h3 className='text-[#152F68] uppercase text-md'>
+          <h3 className='text-md uppercase text-[#152F68]'>
             REPORTES
           </h3>
-          <p className='text-3xl font-body max-w-lg md:pr-10 md:text-4xl'>
+          <p className='max-w-lg font-body text-3xl md:pr-10 md:text-4xl'>
             Analiza tus ventas en{' '}
-            <span className='text-[#152F68] font-semibold'>
+            <span className='font-semibold text-[#152F68]'>
               tiempo real
             </span>{' '}
             y administra tus cobros.{' '}
@@ -27,7 +27,7 @@ function ReportsPage() {
         <img
           src={PartnerImage}
           alt='card image'
-          className='object-cover w-full'
+          className='w-full object-cover'
         />
       </div>
     </div>

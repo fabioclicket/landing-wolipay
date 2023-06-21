@@ -2,13 +2,13 @@ import CardImage from '../assets/logoCard.png'
 
 function FeaturesPage() {
   return (
-    <div className='flex flex-col items-center my-16' id='features'>
-      <h3 className='text-[#89C9E7] mb-3 uppercase text-md'>
+    <div className='my-16 flex flex-col items-center' id='features'>
+      <h3 className='text-md mb-3 uppercase text-[#89C9E7]'>
         Features
       </h3>
-      <p className='font-body text-black text-center text-3xl max-w-lg leading-8'>
+      <p className='max-w-lg text-center font-body text-3xl leading-8 text-black'>
         Desarrollamos el{' '}
-        <span className='text-[#152F68] font-semibold'>
+        <span className='font-semibold text-[#152F68]'>
           mejor producto
         </span>{' '}
         para tu negocio o emprendimiento
@@ -18,22 +18,22 @@ function FeaturesPage() {
         <img
           src={CardImage}
           alt='card image'
-          className='w-52 h-52 object-cover rounded-3xl rotate-180'
+          className='h-52 w-52 rotate-180 rounded-3xl object-cover'
         />
         <img
           src={CardImage}
           alt='card image'
-          className='w-52 h-52 object-cover rounded-3xl -mb-32 rotate-180'
+          className='-mb-32 h-52 w-52 rotate-180 rounded-3xl object-cover'
         />
         <img
           src={CardImage}
           alt='card image'
-          className='w-52 h-52 object-cover rounded-3xl rotate-180'
+          className='h-52 w-52 rotate-180 rounded-3xl object-cover'
         />
         <img
           src={CardImage}
           alt='card image'
-          className='w-52 h-52 object-cover rounded-3xl -mb-32 rotate-180'
+          className='-mb-32 h-52 w-52 rotate-180 rounded-3xl object-cover'
         />
       </div>
     </div>

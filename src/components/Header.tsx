@@ -4,37 +4,37 @@ type Props = {
 
 function Header({ setShowLogin }: Props) {
   return (
-    <header className='w-full h-auto max-w-[1390px] flex absolute top-0 z-50 self-center'>
-      <div className='w-full flex items-center justify-between py-1 px-8 md:px-2'>
-        <nav className='w-full font-body z-50 hidden md:block'>
-          <ul className='w-full flex gap-8 py-5 px-10 justify-end items-center font-bold'>
-            <a href='#pagos'>
-              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+    <header className="absolute top-0 z-50 flex h-auto w-full max-w-[1390px] self-center">
+      <div className="flex w-full items-center justify-between px-8 py-1 md:px-2">
+        <nav className="z-50 hidden w-full font-body md:block">
+          <ul className="flex w-full items-center justify-end gap-8 px-10 py-5 font-bold">
+            <a href="#pagos">
+              <li className="group relative max-h-max cursor-pointer transition-all duration-300">
                 Pagos
-                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+                <span className="absolute inset-x-0 -bottom-1 mx-auto inline-block h-1 w-0 rounded-3xl bg-[#152F68] transition-all duration-300 group-hover:w-full"></span>
               </li>
             </a>
-            <a href='#reportes'>
-              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+            <a href="#reportes">
+              <li className="group relative max-h-max cursor-pointer transition-all duration-300">
                 Reportes
-                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+                <span className="absolute inset-x-0 -bottom-1 mx-auto inline-block h-1 w-0 rounded-3xl bg-[#152F68] transition-all duration-300 group-hover:w-full"></span>
               </li>
             </a>
-            <a href='#devoluciones'>
-              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+            <a href="#devoluciones">
+              <li className="group relative max-h-max cursor-pointer transition-all duration-300">
                 Devoluciones
-                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+                <span className="absolute inset-x-0 -bottom-1 mx-auto inline-block h-1 w-0 rounded-3xl bg-[#152F68] transition-all duration-300 group-hover:w-full"></span>
               </li>
             </a>
-            <a href='#integracion'>
-              <li className='max-h-max cursor-pointer relative group transition-all duration-300'>
+            <a href="#integracion">
+              <li className="group relative max-h-max cursor-pointer transition-all duration-300">
                 Integración
-                <span className='inline-block absolute w-0 mx-auto group-hover:w-full h-1 rounded-3xl bg-[#152F68] right-0 left-0 -bottom-1 transition-all duration-300'></span>
+                <span className="absolute inset-x-0 -bottom-1 mx-auto inline-block h-1 w-0 rounded-3xl bg-[#152F68] transition-all duration-300 group-hover:w-full"></span>
               </li>
             </a>
             <li
               onClick={() => setShowLogin(true)}
-              className='bg-white py-2 px-8 text-[#152F68] rounded-3xl cursor-pointer hover:bg-[#152F68] hover:text-white transition-all duration-500'
+              className="cursor-pointer rounded-3xl bg-white px-8 py-2 text-[#152F68] transition-all duration-500 hover:bg-[#152F68] hover:text-white"
             >
               Ingresar
             </li>

@@ -15,7 +15,7 @@ function App() {
   const [showLogin, setShowLogin] = useState(false)
 
   return (
-    <div className='w-full flex flex-col'>
+    <div className='flex w-full flex-col'>
       {showLogin ? (
         <Login setShowLogin={setShowLogin} />
       ) : (
@@ -29,9 +29,9 @@ function App() {
           <div id='contacto'>
             <Widget
               id='vk9y0dLS'
-              className='my-form w-[90%] md:w-[70%] h-[600px] mt-16 md:mt-28 mx-auto mb-16'
+              className='my-form mx-auto my-16 h-[600px] w-[90%] md:mt-28 md:w-[70%]'
             />
-            <div className='w-full flex flex-col gap-3 items-center mx-auto text-black mb-16'>
+            <div className='mx-auto mb-16 flex w-full flex-col items-center gap-3 text-black'>
               <p className='flex items-center gap-2'>
                 Hecho con <img src={Heart} alt='heart icon' /> en
                 Bolivia.{' '}
